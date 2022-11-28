@@ -15,7 +15,7 @@ class SitesController < ApplicationController
     @site = Site.new(site_params)
     @site.tour = Tour.find(params[:tour_id])
     if @site.save
-      redirect_to tour_site_path(@site.tour)
+      redirect_to tour_path(@site.tour)
     else
       render :new, status: :unprocessable_entity
     end
