@@ -13,7 +13,7 @@ class SitesController < ApplicationController
 
   def create
     @site = Site.new(site_params)
-    @site.tour = Tour.find(params[:id])
+    @site.tour = Tour.find(params[:tour_id])
     if @site.save
       redirect_to tour_site_path(@site.tour)
     else
@@ -24,6 +24,6 @@ class SitesController < ApplicationController
   private
 
   def site_params
-    params.require(:site).permit(:name, :longitude, :latitude, :img_url)
+    params.require(:site).permit(:name, :img_url)
   end
 end
