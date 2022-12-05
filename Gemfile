@@ -87,3 +87,5 @@ gem "geocoder"
 gem "cloudinary"
 
 gem 'redis', '~> 5.0'
+
+gem "noticed", "~> 1.6"
