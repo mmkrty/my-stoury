@@ -10,11 +10,6 @@
 
   &-header {
     height: 20rem;
-
-    img {
-      height: 50%;
-      width: 50%;
-    }
   }
 
   &-info {
@@ -32,6 +27,11 @@
 }
 
 .profile-text {
-  margin: 0 auto;
   font-size: 20px;
+}
+
+.avatar-profile {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
 }
